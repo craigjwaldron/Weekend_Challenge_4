@@ -60,10 +60,11 @@ $(document).ready( function(){
       // console.log("hi from taskCheck yo");
       // console.log('this id completed: ' + $(this).attr('taskId'));
       var taskId = {
-          'id': $(this).attr('taskId')
+          'id': $(this).attr('taskId'),
+          'completed': $(this).attr('taskId')
         };
 
-        $(this).closest("li").css("background-color", "#677077");
+        $(this).closest("li").css("background-color", "#b5b5b7");
 
       $.ajax( {
         type: "POST",
