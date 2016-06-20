@@ -1,4 +1,4 @@
-# Weekend_Challenge_4
+# Weekend Challenge 4
 
 Here are the specific components for the challenge:
 
