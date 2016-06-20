@@ -63,6 +63,8 @@ $(document).ready( function(){
           'id': $(this).attr('taskId')
         };
 
+        $(this).closest("li").css("background-color", "#677077");
+
       $.ajax( {
         type: "POST",
         url: "/updateTask",
