@@ -1,0 +1,116 @@
+
+#taskDiv {
+  padding: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  border-bottom: 1px solid #b5b5b7;
+  color: #677077;
+}
+
+#mainDiv{
+  border: 2px solid #b5b5b7;
+}
+
+#taskCheck{
+  margin-right: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+h1 {
+  background: #677077;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  max-width: 100%;
+  letter-spacing: 1px;
+}
+
+ul {
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  max-width: 100%;
+}
+
+li:nth-child(2n) {
+  max-width: 100%;
+}
+
+#deleteButton {
+  background-color: white;
+  float:right;
+  color: black;
+  border: 1px solid #b5b5b7;
+  transition-duration: 0.4s;
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#deleteButton:hover {
+    background-color: #b5b5b7;
+    color: white;
+}
+
+#outputDiv{
+  max-width: 100%;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 20px;
+  font-size: 12px;
+  letter-spacing: .5px;
+  margin: 0;
+  box-sizing : border-box;
+  border: 0px solid #008CBA;
+
+}
+
+#submitTask {
+  background-color: #F7C331;
+  border: 0px solid #008CBA;
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #677077;
+}
+
+button:focus {
+  outline:0;
+}
+
+input:focus {
+  outline:0;
+}
+
+#submitTask:hover {
+    background-color: #f2b632;
+    color: white;
+}
+
+#inputDiv{
+  background-color: #f2b632;
+}
+
+#mainDiv{
+  margin: 5% 25% 5% 25%;
+}

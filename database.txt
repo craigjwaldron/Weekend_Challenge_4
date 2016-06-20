@@ -1,0 +1,5 @@
+CREATE TABLE users (
+     id INTEGER SEQUENCE NOT NULL,
+     task TEXT,
+     completed BOOLEAN,
+);
