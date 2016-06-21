@@ -64,6 +64,7 @@ $(document).ready( function(){
           'completed': $(this).attr('taskId')
         };
 
+        $(this).closest("li").css("text-decoration", "line-through");
         $(this).closest("li").css("background-color", "#b5b5b7");
 
       $.ajax( {
