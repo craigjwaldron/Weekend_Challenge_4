@@ -74,6 +74,6 @@ app.get ( "/getTask", urlencodedParser, function ( req, res ){
 }); // End of app.get
 
 // On the server-------------------------------------------------------------------------------------------------------
-app.listen ( 3000, "localhost", function( req, res ){
+app.listen(process.env.PORT || 3000, function(req, res){
   // console.log( "listening from server 3000" );
 });
