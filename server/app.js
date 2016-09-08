@@ -4,8 +4,16 @@ var path = require("path");
 var bodyParser = require("body-parser");
 var urlencodedParser = bodyParser.urlencoded( { extended: false } );
 var pg = require("pg");
-var connectionString = 'postgres://localhost:5432/to_do';
-
+var connectionString = '';
+  if(process.env.DATABASE_URL !== undefined) {
+      console.log('env connection string');
+    connectionString = process.env.DATABASE_URL;
+    pg.defaults.ssl = true;
+  } else {
+    connectionString = 'postgres://localhost:5432/to_do';
+  }
+console.log("connectionString set to: ", connectionString);
+module.exports = connectionString;
 
 // Setting up static page ------------------------------------------------------------------------------------------------------
 app.use ( express.static( "public" ));
